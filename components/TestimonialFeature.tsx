@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { BadgeCheck, Star, Globe } from "lucide-react";
+import { BadgeCheck, Star} from "lucide-react";
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -46,7 +47,7 @@ const TestimonialFeature = () => {
           <div className="border-0">
             <div className="flex flex-col md:items-center md:flex-row gap-8 md:gap-12">
               <div className="w-full md:w-1/2 flex items-center justify-center animate-fade-in">
-                <img 
+                <Image 
                 src="/images/sarah.webp" 
                 alt="Sarah Johnson" 
                 className="w-full md:max-w-xl h-full object-cover"

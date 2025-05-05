@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { MoveRight } from 'lucide-react';
+import Image from 'next/image';
 
 const MissionStatement = () => {
   return (
@@ -33,7 +34,7 @@ const MissionStatement = () => {
           {/* Right side - Image */}
           <div className="w-full md:w-1/2 overflow-hidden rounded-tl-[0px] rounded-tr-[30px] rounded-br-[30px] rounded-bl-[0px]">
             <div className="h-full w-full transform transition-all duration-700 hover:scale-110">
-              <img
+              <Image
                 src="/images/our-mission.webp"
                 alt="Man with broken car"
                 className="w-full h-full object-cover"

@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { StarIcon } from 'lucide-react';
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -95,7 +96,7 @@ const Testimonials = () => {
                         </div>
                         <p className="text-gray-700 italic flex-grow">{testimonial.content}</p>
                         <div className="flex items-center mt-4">
-                          <img 
+                          <Image 
                             src="/images/julia.webp" 
                             alt="Lawyers" 
                             className="w-[64px] h-[64px] me-4 object-cover"

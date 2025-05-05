@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Circle } from 'lucide-react';
+import Image from 'next/image';
 
 const ImprovedHowItWorks = () => {
   const steps = [
@@ -39,7 +40,7 @@ const ImprovedHowItWorks = () => {
         <div className="flex flex-col md:items-center md:flex-row gap-8 md:gap-12">
           {/* Left column - Image */}
           <div className="w-full md:w-1/3 flex items-center justify-center animate-fade-in">
-            <img 
+            <Image 
               src="/images/How-it-works.webp" 
               alt="Man holding a phone" 
               className="rounded-lg shadow-lg max-w-full h-auto object-cover"
