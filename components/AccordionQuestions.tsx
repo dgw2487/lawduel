@@ -1,5 +1,4 @@
 import React from 'react';
-import { StarIcon } from 'lucide-react';
 
 import {
   Accordion,
