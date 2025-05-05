@@ -98,8 +98,10 @@ const Testimonials = () => {
                         <div className="flex items-center mt-4">
                           <Image 
                             src="/images/julia.webp" 
-                            alt="Lawyers" 
-                            className="w-[64px] h-[64px] me-4 object-cover"
+                            alt="Lawyers"
+                            width={64}
+                            height={64}
+                            className="me-4 object-cover"
                           />
                           <div>
                             <p className="font-semibold text-lawduel-navy">{testimonial.name}</p>

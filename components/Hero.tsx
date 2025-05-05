@@ -14,28 +14,36 @@ const Hero = () => {
           <div className="absolute top-0 left-[65px]">
             <Image 
               src="/images/lawyer1.webp" 
-              alt="Lawyers" 
+              alt="Lawyers"
+              width={460}
+              height={216}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute top-[50px] right-0">
             <Image 
               src="/images/lawyer2.webp" 
-              alt="Legal Tech lawyer" 
+              alt="Legal Tech lawyer"
+              width={307}
+              height={297}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute bottom-0 left-0" >
             <Image 
               src="/images/lawyer3.webp" 
-              alt="Accidents lawyer" 
+              alt="Accidents lawyer"
+              width={370}
+              height={286}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute bottom-0 right-[100px]">
             <Image 
               src="/images/lawyer4.webp" 
-              alt="Cars lawyer" 
+              alt="Cars lawyer"
+              width={361}
+              height={234}
               className="w-full h-full object-cover"
             />
           </div>
@@ -62,28 +70,36 @@ const Hero = () => {
             <div className="w-full aspect-square">
             <Image 
               src="/images/lawyer1.webp" 
-              alt="Lawyers" 
+              alt="Lawyers"
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
             </div>
             <div className="w-full aspect-square">
             <Image 
               src="/images/lawyer2.webp" 
-              alt="Lawyers" 
+              alt="Lawyers"
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
             </div>
             <div className="w-full aspect-square" >
             <Image 
               src="/images/lawyer3.webp" 
-              alt="Lawyers" 
+              alt="Lawyers"
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
             </div>
             <div className="w-full aspect-square">
             <Image 
               src="/images/lawyer4.webp" 
-              alt="Lawyers" 
+              alt="Lawyers"
+              width={100}
+              height={100}
               className="w-full h-full object-cover"
             />
             </div>

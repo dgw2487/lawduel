@@ -43,6 +43,8 @@ const ImprovedHowItWorks = () => {
             <Image 
               src="/images/How-it-works.webp" 
               alt="Man holding a phone" 
+              width={625}
+              height={650}
               className="rounded-lg shadow-lg max-w-full h-auto object-cover"
               style={{maxHeight: '500px'}}
             />

@@ -37,6 +37,8 @@ const MissionStatement = () => {
               <Image
                 src="/images/our-mission.webp"
                 alt="Man with broken car"
+                width={625}
+                height={650}
                 className="w-full h-full object-cover"
               />
             </div>

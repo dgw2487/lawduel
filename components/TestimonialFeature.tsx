@@ -50,6 +50,8 @@ const TestimonialFeature = () => {
                 <Image 
                 src="/images/sarah.webp" 
                 alt="Sarah Johnson" 
+                width={625}
+              height={650}
                 className="w-full md:max-w-xl h-full object-cover"
               />
               </div>
