@@ -15,7 +15,7 @@ export function AccordionQuestions() {
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-black mb-4 max-w-4xl mx-auto text-lawduel-navy mb-4">Your Questions,
           Answered </h2>
         </div>
-        <Accordion type="single" collapsible className="w-full md:max-w-6xl mx-auto">
+        <Accordion type="single" collapsible className="w-full md:max-w-6xl mx-auto accordion-questions">
           <AccordionItem value="item-1">
             <AccordionTrigger className='no-underline p-4 md:p-6'><h4 className='text-2xl no-underline'>Who is LAWDUEL?</h4></AccordionTrigger>
             <AccordionContent className='bg-white p-4 md:p-6 rounded-lg shadow-md'>

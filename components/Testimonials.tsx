@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { StarIcon } from 'lucide-react';
 import Image from 'next/image';
 import {
@@ -18,7 +17,7 @@ const Testimonials = () => {
       name: 'James Wilson',
       role: 'Business Owner',
       content: 'LAWDUEL saved me thousands in legal fees and countless hours of stress. Their business compliance service keeps my company protected without breaking the bank.',
-      avatar: '/placeholder.svg',
+      image: '/images/james.webp',
       initials: 'JW',
       rating: 5
     },
@@ -26,7 +25,7 @@ const Testimonials = () => {
       name: 'Julia Martinez',
       role: 'Entrepreneur',
       content: 'When we needed our contracts reviewed quickly, LAWDUEL delivered within 24 hours with expert feedback that prevented a costly mistake.',
-      avatar: '/placeholder.svg',
+      image: '/images/julia.webp',
       initials: 'JM',
       rating: 5
     },
@@ -34,7 +33,7 @@ const Testimonials = () => {
       name: 'Peter Thompson',
       role: 'Homeowner',
       content: 'The attorney I was matched with through LAWDUEL helped resolve my property dispute effectively. The whole process was transparent and surprisingly affordable.',
-      image: "/placeholder.svg",
+      image: "/images/peter.webp",
       initials: 'PT',
       rating: 5
     },
@@ -42,7 +41,7 @@ const Testimonials = () => {
       name: 'Sarah Johnson',
       role: 'Small Business Owner',
       content: 'I was impressed by how quickly LAWDUEL connected me with the right attorney for my specific legal needs. The service exceeded my expectations in every way.',
-      image: "/placeholder.svg",
+      image: "/images/julia.webp",
       initials: 'SJ',
       rating: 5
     },
@@ -50,7 +49,7 @@ const Testimonials = () => {
       name: 'Michael Chen',
       role: 'Startup Founder',
       content: 'LAWDUEL made navigating complex legal matters straightforward and accessible. Their attorneys are top-notch professionals who really care about their clients.',
-      image: "/placeholder.svg",
+      image: "/images/julia.webp",
       initials: 'MC',
       rating: 5
     },
@@ -58,7 +57,7 @@ const Testimonials = () => {
       name: 'Jessica Williams',
       role: 'Real Estate Investor',
       content: "After struggling with legal issues for months, LAWDUEL connected me with an attorney who resolved everything in weeks. I couldn't be more grateful.",
-      image: "/placeholder.svg",
+      image: "/images/julia.webp",
       initials: 'JW',
       rating: 5
     }
@@ -97,8 +96,8 @@ const Testimonials = () => {
                         <p className="text-gray-700 italic flex-grow">{testimonial.content}</p>
                         <div className="flex items-center mt-4">
                           <Image 
-                            src="/images/julia.webp" 
-                            alt="Lawyers"
+                            src={testimonial.image}
+                            alt={testimonial.name}
                             width={64}
                             height={64}
                             className="me-4 object-cover"
@@ -133,15 +132,16 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="w-full">
-                  <Card className="rounded-xl shadow-lg">
+                  <Card className="bg-white py-4 rounded-xl transition-shadow duration-300 h-full">
                     <CardContent className="p-5">
                       <div className="flex justify-center mb-4">
-                        <Avatar className="h-16 w-16 border-2 border-blue-100">
-                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                          <AvatarFallback className="bg-blue-500 text-white text-lg">
-                            {testimonial.initials}
-                          </AvatarFallback>
-                        </Avatar>
+                          <Image 
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            width={64}
+                            height={64}
+                            className="me-4 object-cover"
+                          />
                       </div>
                       <div className="flex justify-center mb-3">
                         {[...Array(testimonial.rating)].map((_, i) => (
