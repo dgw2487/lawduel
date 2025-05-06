@@ -65,7 +65,7 @@ const TestimonialFeature = () => {
                       />
                     ))}
                   </div>
-                  <h3 className="text-5xl font-bold mb-4 text-lawduel-navy">
+                  <h3 className="text-3xl md:text-5xl font-bold mb-4 text-lawduel-navy">
                     {testimonials[0].header}
                   </h3>
                   <p className="text-gray-700 text-xl mb-6 leading-relaxed">
@@ -119,10 +119,10 @@ const TestimonialFeature = () => {
 
                   <div className="mt-4 flex items-center justify-center md:justify-start">
                     <BadgeCheck
-                      className="mr-2 text-lawduel-orange"
+                      className="mr-2 text-sky-500/75"
                       size={20}
                     />
-                    <span className="text-gray-700 ">
+                    <span className="text-gray-700">
                       It&apos;s FREE if we don&apos;t win.
                     </span>
                   </div>

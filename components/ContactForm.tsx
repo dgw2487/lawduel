@@ -6,6 +6,7 @@ import { Form, FormField, FormItem, FormControl } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { Checkbox } from "@/components/ui/checkbox"
 import { BadgeCheck } from 'lucide-react';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -116,6 +117,18 @@ const ContactForm = () => {
                   )}
                 />
 
+                <div className="items-top flex space-x-3 items-center">
+                      <Checkbox id="terms1" className="w-[30px] h-[30px] bg-white" />
+                      <div className="grid gap-2 leading-none">
+                        <label
+                          htmlFor="terms1"
+                          className="text-lg font-medium text-white leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        >
+                          Accept terms and conditions
+                        </label>
+                      </div>
+                    </div>
+
                 <div className="flex flex-col items-center">
                   <Button
                     type="submit"
@@ -125,7 +138,7 @@ const ContactForm = () => {
                   </Button>
 
                   <div className="mt-5 flex items-center text-white">
-                    <BadgeCheck className="mr-2 text-lawduel-orange" size={20} />
+                    <BadgeCheck className="mr-2 text-white" size={20} />
                     <span>It&apos;s FREE if we don&apos;t win.</span>
                   </div>
 
@@ -133,7 +146,7 @@ const ContactForm = () => {
                     *Results may vary depending on your particular facts and legal
                     circumstances.
                   </p>
-                  <p className="text-white text-5xl mt-6 text-center font-bold">+123-456-7890</p>
+                  <p className="text-white text-3xl md:text-5xl mt-6 text-center font-bold">+123-456-7890</p>
                 </div>
               </form>
             </Form>

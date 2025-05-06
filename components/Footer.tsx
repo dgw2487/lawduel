@@ -15,16 +15,16 @@ const Footer = () => {
             </h2>
 
             <div className="flex space-x-4">
-              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-gray-400 hover:text-lawduel-orange">
+              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-[#192e3b] hover:text-lawduel-orange">
                 <Facebook size={24} />
               </Link>
-              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-gray-400 hover:text-lawduel-orange">
+              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-[#192e3b] hover:text-lawduel-orange">
                 <Instagram size={24} />
               </Link>
-              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-gray-400 hover:text-lawduel-orange">
+              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-[#192e3b] hover:text-lawduel-orange">
                 <Twitter size={24} />
               </Link>
-              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-gray-400 hover:text-lawduel-orange">
+              <Link href="#" className="w-8 h-8 rounded-full bg-lawduel-white flex items-center justify-center text-[#192e3b] hover:text-lawduel-orange">
                 <Linkedin size={24} />
               </Link>
             </div>
